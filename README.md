@@ -1,4 +1,3 @@
-status-wordcount
-================
+# status-wordcount package
 
-An atom.io package that displays the current buffer's word count in the statusbar
+This package adds a statusbar item to atom.io that displays the number of words found the current text buffer.

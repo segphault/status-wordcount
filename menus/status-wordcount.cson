@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable status-wordcount': 'status-wordcount:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Status Word Count'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'status-wordcount:toggle' }
+      ]
+    ]
+  }
+]

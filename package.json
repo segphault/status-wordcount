@@ -1,0 +1,15 @@
+{
+  "name": "status-wordcount",
+  "main": "./lib/status-wordcount",
+  "version": "0.0.1",
+  "private": true,
+  "description": "See the word count of the current buffer in your status bar.",
+  "activationEvents": ["status-wordcount:toggle"],
+  "repository": "https://github.com/segphault/status-wordcount",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
