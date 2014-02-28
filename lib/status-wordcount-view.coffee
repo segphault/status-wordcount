@@ -10,8 +10,11 @@ class StatusWordcountView extends View
 
   updateWordCount: =>
     editor = atom.workspaceView.getActivePaneItem()
-    count = editor.getText().match(/\S+/g).length
-    @text("#{count} words").show()
+    words = editor.getText().match(/\S+/g)
+    if words?.length
+      @text("#{words.length} words").show()
+    else
+      @text("0 words").show()
 
   serialize: ->
 
