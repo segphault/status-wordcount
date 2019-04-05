@@ -9,9 +9,12 @@ class StatusWordcountView extends View
     atom.workspaceView.command "status-wordcount:toggle", => @toggle()
 
   updateWordCount: =>
-    editor = atom.workspaceView.getActivePaneItem()
-    count = editor.getText().match(/\S+/g).length
-    @text("#{count} words").show()
+    try
+        editor = atom.workspaceView.getActivePaneItem()
+        count = editor.getText().match(/\S+/g).length
+        @text("#{count} words").show()
+    catch
+        @text("read-only").show()
 
   serialize: ->
 
